@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>About</title>
+</head>
+<body>
+        <div class="container">
+                <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="houver"><a href="index.html" >Projects</a></li>
+                        <li class="active"><a href="#">About the Challenge</a></li>
+                    </ul>
+                    <hr class="menudivisor">
+                    <div class="social">
+                        <a href="https://github.com/FabioNevez" target="_blank"><img src="github.png"></a> 
+                        <a href="https://fabioneves.pt/" target="_blank"><img src="www.png"></a> 
+                        <a href="https://www.linkedin.com/in/fabionevez" target="_blank"><img src="linkedin.png"></a> 
+                    </div>
+                </nav>
+                </div>
+                <div class="conteudo">
+                    <div class="title">
+                            <h1>The 50 CSS Challenge</h1>
+                            <div class="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <hr class="divisor">
+                    </div>
+                    <div class="sobre">
+                            <h2>Sobre o desafio</h2>
+                        <p>
+                            The 50 CSS Challenge é um desafio que consiste em fazer 50 mini-projetos com a linguagem CSS. O objetivo do desafio é praticar, aprender e compreender a linguagem CSS.
+                           <br> Os projetos são feitos com a ajuda de professores que ensinam de forma gratuita através de tutoriais em plantaformas como o youtube (90% dos projetos), blogs e instagram. 
+                        </p>
+                        <h2>Regras</h2>
+                        <ul>
+                            <li>Prazo máximo de 3 meses a contar do dia de começo (Mais ou menos 1 projeto em cada 2 dias).</li>
+                            <li>O codígo é sempre reescrito, não é permitido o "Copy & Paste". </li>
+                            <li>Os projetos podem conter Javascript desde que o foco seja a pratica do CSS</li>
+                        </ul>
+                        <div class="frase">
+                                <p>"O conhecimento dirige à prática. No entanto a prática aumenta o conhecimento"</p>
+                                <h5>Thomas Fuller</h5>
+                        </div>
+                        <h2>Referências / Agradecimentos</h2>
+                        <p>Um grande obrigado a todos os professores que fizeram com que este projeto fosse possível.</p>
+                        
+                            <ul class="teachers">
+                                    <li>Divinector</li>
+                                    <li>RustCode</li>
+                                    <li>Online Tutorials</li>
+                                    <li>CodingNepal</li>
+                                    <li>Easy Tutorials</li>
+                            </ul>
+                        
+                    </div>
+                </div>
+                <script>
+    
+                    $(document).ready(function(){
+                        $('.burger').click(function(){
+                            $('.menu').toggleClass('show')
+                        });
+                    });
+                </script>
+</body>
+</html>
