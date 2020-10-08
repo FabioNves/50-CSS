@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: crimson;
+}
+
+.container {
+    width: 300px;
+    height: 450px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 2px 2px 24px #000;
+}
+
+.container img{
+    width: 300px;
+    height: 450px;
+    border-radius: 6px;
+    transition: all .4s ease-in-out;
+}
+
+.container:hover img {
+    transform: rotate(2deg) scale(1.5);
+}

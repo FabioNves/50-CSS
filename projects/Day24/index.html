@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Range Slider</title>
+</head>
+<body>
+    <div class="main">
+        <input type="range" min="0" max="100" value="50" id="slider">
+        <div id="selector">
+            <div class="SelectBtn"></div>
+            <div id="SelectValue"></div>
+        </div>
+        <div id="ProgressBar"></div>
+    </div>
+
+    <script>
+        var slider = document.getElementById("slider");
+        var selector = document.getElementById("selector");
+        var SelectValue = document.getElementById("SelectValue");
+        var ProgressBar = document.getElementById("ProgressBar");
+
+        SelectValue.innerHTML = slider.value;
+
+        slider.oninput = function(){
+            SelectValue.innerHTML = this.value;
+            selector.style.left = this.value + "%";
+            ProgressBar.style.width = this.value + "%";
+        }
+    </script>
+</body>
+</html>

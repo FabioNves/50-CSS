@@ -1,0 +1,61 @@
+body{
+    background: #4B88A2;
+}
+.nav-area{
+    width: 70vw;
+    height: 80px;
+    line-height: 80px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin: -25px 0 0 -25vw;
+}
+
+.nav-area ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0,2);
+}
+.nav-area ul li{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    font-family: roboto;
+}
+.nav-area ul li:hover{
+    color: crimson;
+}
+.nav-area ul li:hover:nth-of-type(2) ~ .line{
+    left: 20%;
+}
+.nav-area ul li:hover:nth-of-type(3) ~ .line{
+    left: 40%;
+}
+.nav-area ul li:hover:nth-of-type(4) ~ .line{
+    left: 60%;
+}
+.nav-area ul li:hover:nth-of-type(5) ~ .line{
+    left: 80%;
+}
+.nav-area ul .line{
+    width: 20%;
+    background-color: crimson;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+
+}
