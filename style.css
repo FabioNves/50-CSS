@@ -304,7 +304,45 @@
     margin-left: 2rem;
     font-size: 1rem;
   }
+  @media screen and (max-width: 1500px){
+    html{
+      background-color: #002C45;
+    }
+    .container{
+      display: flex;
+    }
+    .menu{
+      position: fixed;
+      width: 15rem;
+      height: 100%;
+    }
+    .conteudo{
+      margin-left: 15rem;
+    }
+    .projetos{
+      margin: 0;
+      margin-right: 5rem;
+      justify-content: space-between;
+      padding-right: 0rem;
+    }
 
+    .navigation-manual{
+      display: none;
+    }
+    .slider{
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+      width: calc(100vw - 25rem);
+    }
+    .slides{
+      display: flex;
+      flex-direction: column;
+    }
+    .slide{
+      display: flex;
+    }
+  }
 
   @media screen and (max-width: 1200px){
     
