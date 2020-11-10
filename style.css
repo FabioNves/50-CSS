@@ -459,8 +459,19 @@
       width: 100vw;
     }
     .slides{
+      display: flex;
       width: 100%;
       height: 100%;
+      margin: 1rem 0;
+
+    }
+    .slide{
+      display: flex;
+      margin: 1rem 0;
+    }
+
+    .projetos{
+      width: 100%;
     }
 
     .slider{
